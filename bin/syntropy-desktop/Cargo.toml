@@ -1,0 +1,13 @@
+[package]
+name = "syntropy-desktop"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+yororen_ui = "0.2.0"
+syntropy-engine.workspace = true
+syntropy-core.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+gpui = { package = "gpui-ce", version = "0.3" }

@@ -1,0 +1,23 @@
+[package]
+name = "syntropy-engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+syntropy-core.workspace = true
+syntropy-protocols.workspace = true
+
+kameo = { version = "0.13" }
+steno = { version = "0.4" }
+
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+uuid = { version = "1.21.0", features = ["v4"] }
+slog = "2"
+
+[dev-dependencies]
+tracing-subscriber.workspace = true

@@ -1,0 +1,16 @@
+[package]
+name = "syntropy-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+syntropy-core = { path = "../syntropy-core" }
+syntropy-engine = { path = "../syntropy-engine" }
+syntropy-memory = { path = "../syntropy-memory" }
+
+# CLI and TUI
+clap = { version = "4.5", features = ["derive"] }
+ratatui = "0.26"
+# ratatui-image = "0.4"
+tokio.workspace = true
+tracing.workspace = true

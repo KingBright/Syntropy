@@ -1,0 +1,16 @@
+[package]
+name = "syntropy-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+syntropy-core.workspace = true
+syntropy-engine.workspace = true
+syntropy-memory.workspace = true
+syntropy-protocols.workspace = true
+
+# HTTP Framework
+axum = "0.7"
+tokio.workspace = true
+tracing.workspace = true
+serde.workspace = true
